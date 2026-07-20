@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Build your YouTube channel from zero to a million subscribers — record gameplay, edit clips into viral videos, upload to your own streaming platform and climb the Top 100." />
+    <title>TubeStar: Youtuber Simulator</title>
+    <!-- CrazyGames SDK v3 (loaded before the game module; wrapped defensively in src/systems/crazyGames.js so the game runs identically if this fails to load). -->
+    <script src="https://sdk.crazygames.com/crazygames-sdk-v3.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;800;900&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: #000;
+      }
+      #app {
+        position: fixed;
+        inset: 0;
+      }
+      #scene-canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/index-DO022N7L.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/three-OHw6QS8p.js">
+  </head>
+  <body>
+    <a href="../../index.html" id="back-to-portfolio" aria-label="Back to portfolio"
+       style="position:fixed;top:10px;left:10px;z-index:99999;padding:6px 12px;font:600 13px/1 system-ui,-apple-system,'Segoe UI',Arial,sans-serif;color:#eef2ff;background:rgba(10,10,20,0.55);border:1px solid rgba(140,140,200,0.35);border-radius:8px;text-decoration:none;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);pointer-events:auto;">&larr; Portfolio</a>
+    <div id="app">
+      <canvas id="scene-canvas"></canvas>
+    </div>
+  </body>
+</html>

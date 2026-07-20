@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Papi — indie game developer. Browser-based 3D games built in pure Three.js and vanilla JavaScript. Play Gunsmith Range and TubeStar directly in your browser.">
+<title>Papi — Game Developer Portfolio</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow"><span class="dot"></span> Game Developer Portfolio</span>
+    <h1>Papi</h1>
+    <p class="tagline">Indie game developer — browser games built with Three.js &amp; vanilla JavaScript.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#games">▶ Play the games</a>
+      <a class="btn btn-ghost" href="https://github.com/Papi2115" target="_blank" rel="noopener">GitHub&nbsp;↗</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="about">
+  <div class="wrap">
+    <p class="section-title">About</p>
+    <p>
+      I build <strong>complete 3D browser games in pure Three.js / WebGL</strong> — no Unity,
+      no engine. My focus is <strong>performance</strong> and real game systems:
+      economy, progression and AI. I also handle
+      <strong>integration with game distribution platforms</strong> such as the CrazyGames SDK,
+      shipping polished titles that run instantly in any modern browser.
+    </p>
+  </div>
+</section>
+
+<!-- ===================== GAMES ===================== -->
+<section id="games">
+  <div class="wrap">
+    <p class="section-title">Playable Games</p>
+    <div class="games-grid">
+
+      <!-- ---------- GUNSMITH RANGE ---------- -->
+      <article class="card fps">
+        <div class="card-art art-fps"><span class="emoji" role="img" aria-label="Pistol">🔫</span></div>
+        <div class="card-body">
+          <h3>Gunsmith Range</h3>
+          <p class="desc">
+            A 3D FPS campaign built in pure Three.js — 10 missions, a weapon system with
+            attachments, AI enemies and CrazyGames SDK integration.
+          </p>
+          <div class="tags">
+            <span class="tag">Three.js</span>
+            <span class="tag">Vanilla JS · ES Modules</span>
+            <span class="tag">WebGL</span>
+            <span class="tag">Web Audio API</span>
+            <span class="tag">CrazyGames SDK v2</span>
+          </div>
+          <ul class="features">
+            <li>10 campaign missions across unique locations (warehouse, outpost, street, house, industrial site, bunker, airport, train, port, complex)</li>
+            <li>8 weapons (rifle, pistol, SMG, DMR, shotgun, LMG + 2 purchasable: OSA bullpup, GRZMOT revolver) and ~14 attachments (sights, magazines, grips, suppressors)</li>
+            <li>Three AI enemy types (shooter, tactical crouch, knifeman) with procedural animation</li>
+            <li>Wave system with captain narration between stages</li>
+            <li>Economy (credits), weapon unlocks and progress saved in localStorage</li>
+            <li>Grenades (frag + flashbang) with flight physics</li>
+            <li>Touch controls on mobile (virtual joystick)</li>
+            <li>Optimized rendering (light culling, raycast filtering, GPU tuning)</li>
+          </ul>
+          <div class="card-cta">
+            <a class="play-btn" href="games/gunsmith-range/index.html">▶ PLAY</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ---------- TUBESTAR ---------- -->
+      <article class="card tube">
+        <div class="card-art art-tube"><span class="emoji" role="img" aria-label="Video camera">📹</span></div>
+        <div class="card-body">
+          <h3>TubeStar: Youtuber Simulator</h3>
+          <p class="desc">
+            A 3D life sim of an online creator — explore your room, record and edit videos,
+            grow your channel and climb a leaderboard against a hundred NPCs.
+          </p>
+          <div class="tags">
+            <span class="tag">Three.js</span>
+            <span class="tag">Vite</span>
+            <span class="tag">Vanilla JS · ES Modules</span>
+            <span class="tag">localStorage</span>
+            <span class="tag">CrazyGames SDK v3</span>
+          </div>
+          <ul class="features">
+            <li>Explorable 3D room with upgrades across 3 apartment tiers (with a move-out cutscene)</li>
+            <li>Record &amp; edit content in 5 minigame genres (arcade, racing, shooter, puzzle, horror) + music and livestreaming</li>
+            <li>Full YouTube economy: gear, CPM payouts, trends, content-variety bonus</li>
+            <li>Top 100 leaderboard of 100 dynamically-growing NPC creators</li>
+            <li>50 achievements across 6 rarity tiers with a notification system</li>
+            <li>Wardrobe of 11 unlockable character looks</li>
+            <li>10 pets wandering around the room</li>
+            <li>In-game "internet" with 6 themed shops (food, gear, furniture, games, pets, real estate)</li>
+            <li>Fan events with a hype minigame and milestone email notifications</li>
+          </ul>
+          <div class="card-cta">
+            <a class="play-btn" href="games/tube-simulator/index.html">▶ PLAY</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="wrap footer-inner">
+    <a href="https://github.com/Papi2115" target="_blank" rel="noopener">github.com/Papi2115&nbsp;↗</a>
+    <span class="footer-note">© 2026 Papi — built with Three.js</span>
+  </div>
+</footer>
+
+</body>
+</html>
