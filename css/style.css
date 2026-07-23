@@ -118,8 +118,32 @@ section { padding: 52px 0; }
 .games-grid {
   display: grid; gap: 26px;
   grid-template-columns: 1fr;
-  max-width: 760px; margin: 0 auto; /* single showcased game — centered card, not stretched edge to edge */
 }
+
+/* Single showcased game: wide card split into two columns instead of one long
+   vertical strip — pitch/CTA on the left, feature list (its own 2-col grid) +
+   dev-panel note on the right. Collapses back to one column on narrow screens. */
+.tube-grid { display: grid; grid-template-columns: 1fr; }
+@media (min-width: 860px) {
+  .tube-grid { grid-template-columns: 360px 1fr; align-items: stretch; }
+  .tube-col-main { display: flex; flex-direction: column; }
+  .tube-col-main .card-art { flex: 1; height: auto; min-height: 260px; }
+  .tube-col-side {
+    border-left: 1px solid var(--border);
+  }
+}
+.tube-col-side {
+  padding: 22px 24px 24px;
+  display: flex; flex-direction: column; gap: 16px;
+  border-top: 1px solid var(--border);
+}
+@media (min-width: 860px) { .tube-col-side { border-top: none; } }
+.side-title {
+  font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--text-dim);
+}
+.features-grid { display: grid; grid-template-columns: 1fr; gap: 8px 22px; }
+@media (min-width: 540px) { .features-grid { grid-template-columns: 1fr 1fr; } }
 
 .card {
   background: linear-gradient(180deg, var(--panel), var(--bg-2));
