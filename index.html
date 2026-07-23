@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Papi — indie game developer. Browser-based 3D games built in pure Three.js and vanilla JavaScript. Play Gunsmith Range and TubeStar directly in your browser.">
+<meta name="description" content="Papi — indie game developer. TubeStar: Youtuber Simulator, a 3D life-sim browser game built in pure Three.js and vanilla JavaScript. Play it directly in your browser, on desktop or mobile.">
 <title>Papi — Game Developer Portfolio</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -41,38 +41,6 @@
     <p class="section-title">Playable Games</p>
     <div class="games-grid">
 
-      <!-- ---------- GUNSMITH RANGE ---------- -->
-      <article class="card fps">
-        <div class="card-art art-fps"><span class="emoji" role="img" aria-label="Pistol">🔫</span></div>
-        <div class="card-body">
-          <span class="status-badge">🚧 In active development — playable prototype</span>
-          <h3>Gunsmith Range</h3>
-          <p class="desc">
-            A 3D FPS campaign built in pure Three.js — 10 missions, a weapon system with
-            attachments and AI enemies.
-          </p>
-          <div class="tags">
-            <span class="tag">Three.js</span>
-            <span class="tag">Vanilla JS · ES Modules</span>
-            <span class="tag">WebGL</span>
-            <span class="tag">Web Audio API</span>
-          </div>
-          <ul class="features">
-            <li>10 campaign missions across unique locations (warehouse, outpost, street, house, industrial site, bunker, airport, train, port, complex)</li>
-            <li>8 weapons (rifle, pistol, SMG, DMR, shotgun, LMG + 2 purchasable: OSA bullpup, GRZMOT revolver) and ~14 attachments (sights, magazines, grips, suppressors)</li>
-            <li>Three AI enemy types (shooter, tactical crouch, knifeman) with procedural animation</li>
-            <li>Wave system with captain narration between stages</li>
-            <li>Economy (credits), weapon unlocks and progress saved in localStorage</li>
-            <li>Grenades (frag + flashbang) with flight physics</li>
-            <li>Touch controls on mobile (virtual joystick)</li>
-            <li>Optimized rendering (light culling, raycast filtering, GPU tuning)</li>
-          </ul>
-          <div class="card-cta">
-            <a class="play-btn" href="games/gunsmith-range/index.html">▶ PLAY</a>
-          </div>
-        </div>
-      </article>
-
       <!-- ---------- TUBESTAR ---------- -->
       <article class="card tube">
         <div class="card-art art-tube"><span class="emoji" role="img" aria-label="Video camera">📹</span></div>
@@ -81,30 +49,37 @@
           <h3>TubeStar: Youtuber Simulator</h3>
           <p class="desc">
             A 3D life sim of an online creator — explore your room, record and edit videos,
-            grow your channel and climb a leaderboard against a hundred NPCs.
+            grow your channel and climb a leaderboard against a hundred NPCs. Move into bigger
+            apartments, adopt pets, dress up your character and get invited to fan events as
+            you blow up. Playable on desktop and mobile, mouse/touch only.
           </p>
           <div class="tags">
             <span class="tag">Three.js</span>
             <span class="tag">Vite</span>
             <span class="tag">Vanilla JS · ES Modules</span>
             <span class="tag">localStorage</span>
+            <span class="tag">Mobile-friendly</span>
           </div>
           <ul class="features">
-            <li>Explorable 3D room with upgrades across 3 apartment tiers (with a move-out cutscene)</li>
-            <li>Record &amp; edit content in 5 minigame genres (arcade, racing, shooter, puzzle, horror) + music and livestreaming</li>
-            <li>Full YouTube economy: gear, CPM payouts, trends, content-variety bonus</li>
-            <li>Top 100 leaderboard of 100 dynamically-growing NPC creators</li>
-            <li>50 achievements across 6 rarity tiers with a notification system</li>
-            <li>Wardrobe of 11 unlockable character looks</li>
-            <li>10 pets wandering around the room</li>
+            <li>Explorable 3D room, upgradable across 3 apartment tiers with a move-in cutscene</li>
+            <li>Record &amp; edit content across 5 minigame genres (arcade, racing, shooter, puzzle, horror), each with 3 distinct price tiers, plus music and livestreaming</li>
+            <li>Full YouTube economy: gear upgrades, CPM payouts, weekly trends, content-variety bonus</li>
+            <li>Top 100 leaderboard of dynamically-growing NPC creators</li>
+            <li>50 achievements across 6 rarity tiers, each paying out cash, with a toast notification system</li>
+            <li>Wardrobe: 10 unlockable character skins plus a full accessories tab (hats, glasses, rare mythic recolors), gated by cash or subscriber milestones</li>
+            <li>10 collectible pets wandering independently around the room</li>
             <li>In-game "internet" with 6 themed shops (food, gear, furniture, games, pets, real estate)</li>
-            <li>Fan events with a hype minigame and milestone email notifications</li>
+            <li>Fan events with a hype minigame and milestone email invites</li>
+            <li>Always-on rotating goals panel nudging you toward the next thing to try, each worth a small cash bonus</li>
+            <li>Non-blocking crisis system: a banner warns you and counts down instead of a hard stop</li>
+            <li>Full sound design (music + sound effects) and touch controls on phones/tablets, portrait or landscape</li>
           </ul>
           <div class="dev-panel-note">
             <p class="dev-panel-title">🛠️ Want to test something specific? Press <kbd>`</kbd> (backtick) to open the dev panel — it lets you edit any game number (cash, subs, etc.) live, so you can jump straight to any feature:</p>
             <ul>
-              <li><strong>Buy/equip a skin:</strong> open the dev panel, bump your cash or subscriber count, close it, then click the wardrobe/closet in your room to open the Wardrobe and buy or equip any look.</li>
+              <li><strong>Buy/equip a skin or accessory:</strong> open the dev panel, bump your cash or subscriber count, close it, then click the wardrobe/closet in your room to open the Wardrobe and buy or equip any look.</li>
               <li><strong>Buy an apartment:</strong> open the dev panel, set cash to at least $10,000 (Tier 2) or $100,000 (Tier 3), close it, then open the desktop's Internet app → KeyList Realty → Buy → Move in.</li>
+              <li><strong>Adopt a pet:</strong> open the dev panel, bump your cash, close it, then open the desktop's Internet app → PetPals → Adopt.</li>
               <li><strong>Go to a fan event:</strong> open the dev panel, set subscribers to 1,000+, close it, then open the Gmail app on the desktop — you'll have an event invite email, click "Accept &amp; Go to Event".</li>
             </ul>
           </div>

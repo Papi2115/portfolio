@@ -2,7 +2,7 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="description" content="Build your YouTube channel from zero to a million subscribers — record gameplay, edit clips into viral videos, upload to your own streaming platform and climb the Top 100." />
     <title>TubeStar: Youtuber Simulator</title>
     <!-- CrazyGames SDK v3 (loaded before the game module; wrapped defensively in src/systems/crazyGames.js so the game runs identically if this fails to load). -->
@@ -17,10 +17,15 @@
         padding: 0;
         overflow: hidden;
         background: #000;
+        touch-action: none;
+        overscroll-behavior: none;
+        -webkit-user-select: none;
+        user-select: none;
       }
       #app {
         position: fixed;
         inset: 0;
+        padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
       }
       #scene-canvas {
         display: block;
@@ -28,12 +33,10 @@
         height: 100%;
       }
     </style>
-    <script type="module" crossorigin src="./assets/index-DO022N7L.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/three-OHw6QS8p.js">
+    <script type="module" crossorigin src="./assets/index-DIqJsEo2.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/three-Bx-z9ja7.js">
   </head>
   <body>
-    <a href="../../index.html" id="back-to-portfolio" aria-label="Back to portfolio"
-       style="position:fixed;top:10px;left:10px;z-index:99999;padding:6px 12px;font:600 13px/1 system-ui,-apple-system,'Segoe UI',Arial,sans-serif;color:#eef2ff;background:rgba(10,10,20,0.55);border:1px solid rgba(140,140,200,0.35);border-radius:8px;text-decoration:none;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);pointer-events:auto;">&larr; Portfolio</a>
     <div id="app">
       <canvas id="scene-canvas"></canvas>
     </div>

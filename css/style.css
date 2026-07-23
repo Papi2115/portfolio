@@ -118,9 +118,7 @@ section { padding: 52px 0; }
 .games-grid {
   display: grid; gap: 26px;
   grid-template-columns: 1fr;
-}
-@media (min-width: 820px) {
-  .games-grid { grid-template-columns: 1fr 1fr; }
+  max-width: 760px; margin: 0 auto; /* single showcased game — centered card, not stretched edge to edge */
 }
 
 .card {
@@ -150,7 +148,6 @@ section { padding: 52px 0; }
   mask-image: radial-gradient(circle at 50% 45%, #000 20%, transparent 75%);
   -webkit-mask-image: radial-gradient(circle at 50% 45%, #000 20%, transparent 75%);
 }
-.art-fps  { background: radial-gradient(120% 120% at 30% 20%, #14532d 0%, #0b1a24 55%, #060a10 100%); }
 .art-tube { background: radial-gradient(120% 120% at 70% 20%, #4c1d95 0%, #1b1442 55%, #0a0715 100%); }
 
 .card-body { padding: 22px 22px 24px; display: flex; flex-direction: column; gap: 14px; flex: 1; }
